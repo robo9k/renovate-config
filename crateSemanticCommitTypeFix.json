@@ -1,0 +1,15 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "description": "Set semantixCommitType to `fix` for crate build-dependencies, see https://github.com/renovatebot/renovate/discussions/37025",
+  "packageRules": [
+    {
+      "matchDatasources": [ "crate" ],
+      "matchManagers": [ "cargo" ],
+      "matchDepTypes": [
+        "dependencies",
+        "build-dependencies"
+      ],
+      "semanticCommitType": "fix"
+    }
+  ]
+}
