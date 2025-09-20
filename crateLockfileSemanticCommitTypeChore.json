@@ -1,0 +1,11 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "description": "Set semanticCommitType to `chore` for crate lockfile updates",
+  "packageRules": [
+    {
+      "matchDatasources": [ "crate" ],
+      "matchManagers": [ "cargo" ],
+      "semanticCommitType": "{{#if isLockfileUpdate}}chore{{else}}{{semanticCommitType}}{{/if}}"
+    }
+  ]
+}
