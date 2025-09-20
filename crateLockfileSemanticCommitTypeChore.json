@@ -5,7 +5,7 @@
     {
       "matchDatasources": [ "crate" ],
       "matchManagers": [ "cargo" ],
-      "semanticCommitType": "{{#if isLockfileUpdate}}chore{{else}}{{semanticCommitType}}{{/if}}"
+      "semanticCommitType": "{{#if isLockfileUpdate}}chore{{else}}fix{{/if}}"
     }
   ]
 }
